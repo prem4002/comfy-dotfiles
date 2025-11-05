@@ -1,0 +1,118 @@
+/* Global Settings */
+* {
+  font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
+  font-weight: bold;
+  font-size: 16px;
+  color: #ebdbb2; /* Gruvbox foreground */
+}
+
+/* Transparent Waybar Background */
+#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+}
+
+/* Unified Style for All Modules */
+#workspaces,
+#taskbar,
+#custom-wallpaper,
+#tray {
+  background-color: rgba(50, 48, 47, 0.9); /* Gruvbox soft dark base */
+  padding: 4px 6px; /* Inner spacing */
+  margin-top: 6px;  /* Outer spacing */
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+#clock,
+#custom-power {
+  background-color: rgba(50, 48, 47, 0.9);
+  margin-top: 6px; /* Distance from top */
+  margin-right: 6px;
+  padding: 4px 2px;
+  border-radius: 0 10px 10px 0;
+  border-width: 0px;
+}
+
+#network,
+#custom-lock {
+  background-color: rgba(50, 48, 47, 0.9);
+  margin-top: 6px;
+  margin-left: 6px;
+  padding: 4px 2px;
+  border-radius: 10px 0 0 10px;
+  border-width: 0px;
+}
+
+#power-profiles-daemon,
+#custom-reboot,
+#bluetooth,
+#battery,
+#pulseaudio,
+#backlight,
+#custom-temperature,
+#memory,
+#cpu {
+  background-color: rgba(50, 48, 47, 0.9);
+  margin-top: 6px;
+  padding: 4px 2px;
+  border-width: 0px;
+}
+
+#custom-temperature.critical,
+#pulseaudio.muted {
+  color: #fb4934; /* Gruvbox red for critical/muted */
+  padding-top: 0;
+}
+
+/* Hover effect: slightly brighter */
+#power-profiles-daemon:hover,
+#bluetooth:hover,
+#network:hover,
+#backlight:hover,
+#battery:hover,
+#pulseaudio:hover,
+#custom-temperature:hover,
+#memory:hover,
+#cpu:hover,
+#clock:hover,
+#custom-lock:hover,
+#custom-reboot:hover,
+#custom-power:hover,
+#window:hover {
+  background-color: rgba(80, 73, 69, 0.9); /* Gruvbox hover */
+}
+
+/* Workspace active state highlight */
+#workspaces button:hover {
+  background-color: rgba(131, 165, 152, 0.2); /* Gruvbox blue hover */
+  padding: 2px 8px;
+  margin: 0 2px;
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  background-color: #83a598; /* Gruvbox blue */
+  color: #ffffff;
+  padding: 2px 8px;
+  margin: 0 2px;
+  border-radius: 10px;
+}
+
+/* Inactive workspace button */
+#workspaces button {
+  background: transparent;
+  border: none;
+  color: #928374; /* Gruvbox gray */
+  padding: 2px 8px;
+  margin: 0 2px;
+  font-weight: bold;
+}
+
+#window {
+  font-weight: 500;
+  font-style: italic;
+}
