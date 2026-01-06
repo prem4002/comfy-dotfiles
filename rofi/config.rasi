@@ -5,7 +5,8 @@ configuration {
     /* Other common, useful settings for a clean look */
     modi: "drun";
     show-icons:                     true;
-	icon-theme: 			"Reversal-dark";
+    icon-theme: "Reversal-dark";
+    icon-theme-fallback: "hicolor";
 	display-drun: 			"";
 	drun-display-format:            "{name}";
 	sidebar-mode: 			false;
